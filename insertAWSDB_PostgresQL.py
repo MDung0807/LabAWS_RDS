@@ -3,7 +3,7 @@ import psycopg2
 
 
 #Tạo kết nối với RDS PostgreSQL và thêm dữ liệu vào
-conn = psycopg2.connect(database='covid19_postger', user='postgres', password='lab-password', host='ddatabase-postgersql.c62t9l3xga8j.us-east-1.rds.amazonaws.com', port='5432')
+conn = psycopg2.connect(database='covid19_postger', user='postgres', password='lab-password', host='database-postgersql.c62t9l3xga8j.us-east-1.rds.amazonaws.com', port='5432')
 print('Open DB successfully')
 ut.insert(conn)
 ut.select(conn)
